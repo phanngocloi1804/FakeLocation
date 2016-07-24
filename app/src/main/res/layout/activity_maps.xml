@@ -1,8 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <fragment
         android:id="@+id/map"
@@ -13,15 +15,135 @@
 
     </fragment>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_40dp"
+        android:background="@color/transparent_white_50">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/dm_10dp"
+            android:paddingRight="@dimen/dm_40dp"
+            android:singleLine="true"
+            android:textColor="@color/txt_black_33"
+            android:textColorHint="@color/txt_black_77"
+            android:textSize="@dimen/txt_15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rltSearch"
+            android:layout_width="@dimen/dm_40dp"
+            android:layout_height="@dimen/dm_40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_search">
+
+            <ImageView
+                android:layout_width="@dimen/dm_20dp"
+                android:layout_height="@dimen/dm_20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dm_2dp"
+            android:layout_marginLeft="@dimen/dm_5dp"
+            android:layout_marginRight="@dimen/dm_5dp"
+            android:background="@color/main_color" />
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/txtStart"
         android:layout_width="@dimen/dm_150dp"
         android:layout_height="@dimen/dm_40dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/lnlAdView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dm_10dp"
         android:background="@drawable/btn_start"
         android:gravity="center"
         android:text="Start Fake GPS"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnlAdView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        fab:fab_addButtonColorNormal="@color/main_color"
+        fab:fab_addButtonColorPressed="@color/main_color_press"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_addButtonSize="mini"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_press"
+            fab:fab_icon="@drawable/ic_rate"
+            fab:fab_size="mini"
+            fab:fab_title="Rate us" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_press"
+            fab:fab_icon="@drawable/ic_share"
+            fab:fab_size="mini"
+            fab:fab_title="Share" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <RelativeLayout
+        android:id="@+id/rltInfo"
+        android:layout_width="@dimen/dm_40dp"
+        android:layout_height="@dimen/dm_40dp"
+        android:layout_above="@+id/lnlAdView"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_10dp"
+        android:background="@drawable/btn_search">
+
+        <ImageView
+            android:layout_width="@dimen/dm_20dp"
+            android:layout_height="@dimen/dm_20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltLocate"
+        android:layout_width="@dimen/dm_40dp"
+        android:layout_height="@dimen/dm_40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dm_40dp"
+        android:background="@drawable/btn_search">
+
+        <ImageView
+            android:layout_width="@dimen/dm_20dp"
+            android:layout_height="@dimen/dm_20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_locate" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
 </RelativeLayout>
