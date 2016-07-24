@@ -1,0 +1,62 @@
+<resources>
+    <dimen name="actionbar_height">45dp</dimen>
+    <dimen name="ac_imv_size">16dp</dimen>
+    <dimen name="size_ic_menu">54dp</dimen>
+    <dimen name="height_row_deal">124dp</dimen>
+    <dimen name="height_profile_menu">172dp</dimen>
+    <dimen name="height_profile_setting">120dp</dimen>
+    <dimen name="height_avatar">86dp</dimen>
+    <dimen name="spinner_height">38dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="tabs_height">36dp</dimen>
+    <dimen name="tabs_trip">4dp</dimen>
+    <dimen name="height_qr_code">214dp</dimen>
+    <dimen name="camera_padding">55dp</dimen>
+    <dimen name="height_merchant_picture">275dp</dimen>
+    <dimen name="discount_num_size">25dp</dimen>
+    <dimen name="row_merchant_height">110dp</dimen>
+    <dimen name="row_merchant_logo_height">55dp</dimen>
+    <dimen name="row_home_height">110dp</dimen>
+    <dimen name="btn_height">45dp</dimen>
+    <dimen name="one_per_three">110dp</dimen>
+
+    <dimen name="txt_7sp">7sp</dimen>
+    <dimen name="txt_8sp">8sp</dimen>
+    <dimen name="txt_10sp">9sp</dimen>
+    <dimen name="txt_12sp">11sp</dimen>
+    <dimen name="txt_15sp">14sp</dimen>
+    <dimen name="txt_18sp">17sp</dimen>
+    <dimen name="txt_22sp">21sp</dimen>
+    <dimen name="txt_26sp">25sp</dimen>
+    <dimen name="txt_32sp">31sp</dimen>
+    <dimen name="txt_title">17sp</dimen>
+
+    <dimen name="dm_1dp">1dp</dimen>
+    <dimen name="dm_2dp">2dp</dimen>
+    <dimen name="dm_3dp">3dp</dimen>
+    <dimen name="dm_4dp">4dp</dimen>
+    <dimen name="dm_5dp">5dp</dimen>
+    <dimen name="dm_10dp">9dp</dimen>
+    <dimen name="dm_15dp">14dp</dimen>
+    <dimen name="dm_20dp">18dp</dimen>
+    <dimen name="dm_30dp">27dp</dimen>
+    <dimen name="dm_40dp">36dp</dimen>
+    <dimen name="dm_50dp">45dp</dimen>
+    <dimen name="dm_60dp">54dp</dimen>
+    <dimen name="dm_70dp">63dp</dimen>
+    <dimen name="dm_80dp">72dp</dimen>
+    <dimen name="dm_90dp">80dp</dimen>
+    <dimen name="dm_100dp">90dp</dimen>
+    <dimen name="dm_150dp">140dp</dimen>
+    <dimen name="dm_200dp">185dp</dimen>
+
+    <dimen name="dm_1dp_neg">-1dp</dimen>
+    <dimen name="dm_2dp_neg">-2dp</dimen>
+    <dimen name="dm_30dp_neg">-27dp</dimen>
+
+    <dimen name="dm_1dp_ex">1dp</dimen>
+    <dimen name="dm_4dp_ex">4dp</dimen>
+
+    <dimen name="dm_cart">17dp</dimen>
+    <dimen name="dm_10dp_neg">-9dp</dimen>
+</resources>

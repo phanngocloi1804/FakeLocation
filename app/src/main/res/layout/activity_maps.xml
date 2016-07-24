@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="fake.walking.gps.pokemon.go.MapsActivity">
+
+    </fragment>
+
+    <TextView
+        android:id="@+id/txtStart"
+        android:layout_width="@dimen/dm_150dp"
+        android:layout_height="@dimen/dm_40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        android:background="@drawable/btn_start"
+        android:gravity="center"
+        android:text="Start Fake GPS"
+        android:textColor="@color/white" />
+</RelativeLayout>
