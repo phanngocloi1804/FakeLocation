@@ -113,10 +113,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         initData();
 
         checkShowBannerAd();
-
-        if (checkGPS()) {
-            checkMockLocationMode();
-        }
     }
 
     private void initView() {
@@ -643,26 +639,24 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void checkShowFullAd() {
         SharedPreferences preferences = getSharedPreferences("admob", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
-        int count = preferences.getInt("full_count", 1);
+        int count = preferences.getInt("full_count", 0);
+        count++;
         if (count % 2 == 0) {
             initialAdmobFull();
-        } else {
-            count++;
-            editor.putInt("full_count", count);
-            editor.commit();
         }
+        editor.putInt("full_count", count);
+        editor.commit();
     }
 
     private void checkShowBannerAd() {
         SharedPreferences preferences = getSharedPreferences("admob", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
-        int count = preferences.getInt("banner_count", 1);
+        int count = preferences.getInt("banner_count", 0);
+        count++;
         if (count > 2) {
             initialAdmobBanner();
-        } else {
-            count++;
-            editor.putInt("banner_count", count);
-            editor.commit();
         }
+        editor.putInt("banner_count", count);
+        editor.commit();
     }
 }
